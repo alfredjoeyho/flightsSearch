@@ -1,0 +1,30 @@
+<div class="container">
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="contentResp">
+    <div class="form-wrapper text-center blocks" fxFlex>
+
+      <h1 i18n class="p-3 mb-2 bg-secondary text-white w-50 align-content-center flex">Flight search</h1>
+      <h5 i18n class="text-center mb-2 mt-5">Fill your flight information</h5>
+      <form [formGroup]="searchForm" (ngSubmit)="submitHandler()">
+        <div class="form-group">
+          <input type="text" class="form-control" id="departure" placeholder="Enter Your Departure Airport Code e.g.MEL"
+            formControlName="departure">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="arrival" placeholder="Enter Your Arrival Airport Code e.g. LHR"
+            formControlName="arrival">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="ddate"
+            placeholder="Enter your Departure Date e.g. 2012-12-24T00:00:00+11:00" formControlName="dDate">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="rdate"
+            placeholder="Enter your Return Date e.g. 2013-01-03T00:00:00+11:00" formControlName="rDate">
+        </div>
+        <button mat-button class="btn" type="submit" [disabled]="searchForm.invalid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<enterprise-app-search-engine [flightModels]="flightModels"></enterprise-app-search-engine>

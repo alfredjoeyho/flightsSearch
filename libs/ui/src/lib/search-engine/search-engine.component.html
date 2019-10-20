@@ -1,0 +1,22 @@
+<div *ngIf="flightModels.length>0">
+  <h5 i18n class="mt-2">Your flights: </h5>
+</div>
+<mat-grid-list cols="3" rowHeight="1:1.500" gutterSize="80px">
+  <mat-grid-tile *ngFor="let flight of flightModels">
+    <mat-card>
+      <mat-card-header class="mt-2">
+        <h6 class="text-size">{{flight.AirlineName}}</h6>
+      </mat-card-header>
+      <img mat-card-image class="w-50 mt-1 ml-3 flight-image" src="{{flight.AirlineLogoAddress}}">
+      <mat-card-content>
+        <small> Inbound: {{flight.InboundFlightsDuration}}</small>
+      </mat-card-content>
+      <mat-card-content>
+        <small> Outbound: {{flight.OutboundFlightsDuration}}</small>
+      </mat-card-content>
+      <mat-card-content>
+        <small> $ {{flight.TotalAmount}}</small>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

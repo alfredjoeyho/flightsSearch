@@ -1,0 +1,47 @@
+<p>about works!</p>
+<h3>Developer - Programming Task</h3>
+<h4>Description</h4>
+
+<p>The programming task is about creating a small application which simulates a flight search web application. The
+  application gets some input from the user, makes a web service call and displays result to the user.
+  In the application, you need collect following information from the user:
+  • Departure airport code: a three character string. Characters can be any alphanumeric value and does not have to be a
+  valid airport code. This field does not need to support auto complete or suggestion.
+  • Arrival airport code: a three character string. Characters can be any alphanumeric value and does not have to be a
+  valid airport code. This field does not need to support auto complete or suggestion.
+  • Departure date: a date only field.
+  • Return date: a date only field.
+  Collected information should then be submitted to the web service.
+  The web service is a fake REST service which returns JSON. The web service will search for flights and sends down the
+  simulated result as a collection of JSON objects. You need to list all flights and for each of them you need to
+  display</p>
+<h5>
+  the following information:
+</h5>
+
+<p>
+  • Airline logo
+  • Airline name
+  • Outbound flight duration
+  • Inbound flight duration
+  • Total amount in USD
+  Bonus: Implement search or filtering capability
+  Important Notes:
+  • Use Angular framework (not angularjs) to develop your web application.
+  • Wherever possible, perform validation.
+  • Wherever possible, the code must be unit tested.
+  • Consider this application as a sub system of an enterprise application. Design your solution structure as if you
+  were
+  to code the whole enterprise application.
+  • App should be developed assuming it will later be used for different languages and cultures
+  • You are free to choose layout and design your views as you prefer.
+  • For submissions, please DO NOT host your code as public. You can however host it as private git repository if you
+  prefer or send us via email
+  Web service technical information:
+  • Web service url: http://nmflightapi.azurewebsites.net/api/flight
+  • Sample request:
+  "DepartureAirportCode" = "MEl",
+  "ArrivalAirportCode" = "LHR",
+  "DepartureDate" = "2012-12-24T00:00:00+11:00",
+  "ReturnDate" = "2013-01-03T00:00:00+11:00"
+</p>

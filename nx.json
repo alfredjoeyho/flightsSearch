@@ -13,6 +13,12 @@
     },
     "flight-search-app-angular": {
       "tags": []
+    },
+    "shared": {
+      "tags": []
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
