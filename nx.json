@@ -1,0 +1,18 @@
+{
+  "npmScope": "enterprise-app",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "flight-search-app-angular-e2e": {
+      "tags": []
+    },
+    "flight-search-app-angular": {
+      "tags": []
+    }
+  }
+}
